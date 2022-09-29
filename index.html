@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice!</title>
 </head>
+
 <body>
     <script>
-        console.log("Hello world for like the 8th time")
+        /*
+                console.log("Hello world for like the 8th time")
+        
+                let a = 4;
+        let b = 3;
+        
+        let x = 10;
+        let y = 20;
+        let z = "30";
+        let result = x + y + z;
+        
+        console.log(result)
+        
+        var string = `my name is ${result}`;
+        console.log(string);
+        
+        const myString = '123';
+        const myNum = Number(myString);
+        console.log(typeof myNum, myNum);
+        
+        var test = `hi my name is salim
+        and line breaks are supposed to work
+        right? 
+        ${string}`
+        
+        console.log(test) */
 
-        let a = 4;
-let b = 3;
 
-let x = 10;
-let y = 20;
-let z = "30";
-let result = x + y + z;
+        let input = parseInt(prompt("Enter your fizzbuzz up to number"))
 
-console.log(result)
+        var count = 1;
 
-var string = `my name is ${result}`;
-console.log(string);
+        while (count <= input) {
 
-const myString = '123';
-const myNum = Number(myString);
-console.log(typeof myNum, myNum);
+            if (count % 3 == 0 && count % 5 == 0) {
+                console.log('FizzBuzz');
+            }
 
-var test = `hi my name is salim
-and line breaks are supposed to work
-right? 
-${string}`
+            else if (count % 5 == 0) {
+                console.log('Buzz');
 
-console.log(test)
+            }
+
+            else if (count % 3 == 0) {
+                console.log('Fizz');
+            }
+
+            else {
+                console.log(count);
+            }
+
+            count++;
+        }
+
+
     </script>
-    
+
 </body>
+
 </html>
